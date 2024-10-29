@@ -1,1 +1,2 @@
-just use it
+# Cool soundboard.
+## Just use it.
