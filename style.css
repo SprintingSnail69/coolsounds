@@ -21,9 +21,11 @@
 }
 
 .pg {
+    position: absolute;
+    bottom: 10px;
+    font-size: 0.9em;
     font-family: Inter;
     color: dimgrey;
-    padding-bottom: 7.5px;
 }
 
 body {
@@ -48,6 +50,7 @@ h1 {
     display: flex;
     gap: 15px;
     flex-wrap: wrap;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
 }
 
 button {
