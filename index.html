@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soundboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon">
+</head>
+
+<!-- Here is the link: file:///home/chronos/u-3c3080f4eb3a3ea8718618a71936a5ea9f3541d5/MyFiles/Downloads/Soundboard/index.html -->
+
+<body>
+
+    <div class="soundboard">
+
+        <h1 class="head">Soundboard 🎶</h1>
+
+        <div class="buttons">
+            <button onclick="playSound('sound1')">Get Out</button>
+            <button onclick="playSound('sound2')">Metal Pipe</button>
+            <button onclick="playSound('sound3')">Indian Music</button>
+            <button onclick="playSound('sound4')">Thick of It</button>
+            <!-- Add more buttons as needed -->
+        </div>
+        <!-- Audio elements for each sound. Add more buttons and use files. -->
+        <audio class="Audio" id="sound1" src="audio/getout.mp3"></audio>
+        <audio class="Audio" id="sound2" src="audio/pipe.mp3"></audio>
+        <audio class="Audio" id="sound3" src="audio/indi.mp3"></audio>
+        <audio class="Audio" id="sound4" src="audio/thick.mp3"></audio>
+
+        <!--Add more audio like above-->
+
+        <p class="para">Press S to stop sound</p>
+
+    </div>
+    <!--JS files teehee-->
+    <script src="sound.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Inter;
+}
+
+@font-face {
+    font-family: Inter;
+    src: url(fonts/inter.ttf);
+}
+
+.head {
+    font-size: 3em;
+}
+
+.para {
+    font-family: Inter;
+    color: gray;
+    padding-top: 40px;
+
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #222;
+    color: #fff;
+}
+
+.soundboard {
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 30px;
+    color: #4a90e2; /* Changed to blue */
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+button {
+    background-color: #4a90e2; /* Changed to blue */
+    color: #222;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+button:hover {
+    background-color: #79a6f7; /* Lighter blue for hover */
+    scale: 110%;
+    box-shadow: 0 0 20px #79a6f7;
+}
