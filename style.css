@@ -12,6 +12,7 @@
 
 .head {
     font-size: 3em;
+    font-weight: 999;
 }
 
 .para {
@@ -25,7 +26,19 @@
     bottom: 10px;
     font-size: 0.9em;
     font-family: Inter;
-    color: dimgrey;
+    background-color: #1F51FF;
+    padding: 10px;
+    margin: 0;
+    margin-bottom: -10px;
+    width: 100%;
+    left: 0;
+    font-weight: 500;
+    text-underline-offset: 3px;
+    color: white;
+}
+
+.pg a {
+    color: white;
 }
 
 body {
@@ -50,7 +63,6 @@ h1 {
     display: flex;
     gap: 15px;
     flex-wrap: wrap;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
 }
 
 button {
