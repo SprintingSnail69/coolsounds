@@ -18,7 +18,12 @@
     font-family: Inter;
     color: gray;
     padding-top: 40px;
+}
 
+.pg {
+    font-family: Inter;
+    color:gray;
+    padding-top: 60px;
 }
 
 body {
