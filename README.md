@@ -8,7 +8,7 @@
 - Pro at every language
 - Joined 2 days after launch
 - Added like 27 sounds
-> more sounds to come...
+> more sounds to come... <br>
 >             - cobblesteve01
 ## bahabryra 
 - Bad at grammar
