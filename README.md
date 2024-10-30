@@ -1,20 +1,14 @@
 # Cool soundboard.
-## Just use it.
-
-  ________________________
- | /_____________________/
- ||                     |
- ||                     |
- ||                     |
- ||                     |
- ||_____________________|
- |.\ ==  o    *  == o    \
- |..\    |:::       |:::  \
- |...\_____________________\
- |....| ___________________ |
- |.../     P1 |_||_| P2    /
- |...|        .-..-c      |
- |...|        |_||_|      |
-  \..|        |    |      |
-   \.|        |    |      |
-    \|________|____|______|
+# Developers
+## SprintingSnail69
+- Pro HTML and JS dev
+- Started the project
+- Did all the HTML and JS
+## cobblesteve01
+- Pro at every language
+- Joined 2 days after launch
+- Added like 25 sounds
+## bahabryra 
+- Bad at grammar
+- Joined 3 days after launch
+- Okay at HTML 

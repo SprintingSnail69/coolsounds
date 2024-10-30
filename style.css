@@ -32,7 +32,7 @@
     bottom: 10px;
     font-size: 0.9em;
     font-family: Inter;
-    background-color: #536aba;
+    background-color: #4a90e2;
     padding: 10px;
     margin: 0;
     margin-bottom: -10px;
@@ -69,6 +69,8 @@ h1 {
     display: flex;
     gap: 15px;
     flex-wrap: wrap;
+    margin-left: 20px;
+
 }
 
 button {
