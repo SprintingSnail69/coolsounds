@@ -7,7 +7,9 @@
 ## cobblesteve01
 - Pro at every language
 - Joined 2 days after launch
-- Added like 25 sounds
+- Added like 27 sounds
+> more sounds to come...
+>             - cobblesteve01
 ## bahabryra 
 - Bad at grammar
 - Joined 3 days after launch
