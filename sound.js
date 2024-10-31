@@ -2,7 +2,7 @@
 // Password protection
 const password = prompt("Enter the password to access the soundboard:");
 
-if (password === "I AM COOL") { // Replace with your new password
+if (password === "MATH") { // Replace with your new password
     document.querySelector('.soundboard').classList.remove('hidden'); // Show soundboard if correct
 } else {
     alert("Wrong password. Access denied. :(");
