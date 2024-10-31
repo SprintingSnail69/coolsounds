@@ -62,7 +62,7 @@ body {
 
 h1 {
     margin-bottom: 30px;
-    color: #4a90e2; /* Changed to blue */
+    color: #4a90e2; 
 }
 
 .buttons {
@@ -74,7 +74,7 @@ h1 {
 }
 
 button {
-    background-color: #4a90e2; /* Changed to blue */
+    background-color: #4a90e2; 
     color: #222;
     border: none;
     padding: 15px 30px;
@@ -86,7 +86,7 @@ button {
 }
 
 button:hover {
-    background-color: #79a6f7; /* Lighter blue for hover */
+    background-color: #79a6f7; 
     scale: 110%;
     box-shadow: 0 0 20px #79a6f7;
 }
