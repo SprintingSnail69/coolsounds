@@ -56,12 +56,6 @@ body {
     color: #fff;
 }
 
-.hidden {
-    display: none; /* Keeps the soundboard hidden */
-    text-align: center;
-}
-
-
 .soundboard {
     text-align: center;
 }
@@ -95,4 +89,129 @@ button:hover {
     background-color: #79a6f7; 
     scale: 110%;
     box-shadow: 0 0 20px #79a6f7;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 2;
+
+  }
+  .modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 20px;
+    background-color: rgb(44, 44, 44);
+    border-radius: 20px;
+    padding: 15px;
+    width: 400px;
+    height: 245px;
+    text-align: center;
+    transform: translate(-50%, -50%) scale(0);
+    animation: zoomIn 0.3s ease forwards;
+  }
+  .modal.show .modal-content {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  .modal.hide .modal-content {
+    animation: zoomOut 0.3s ease forwards;
+  }
+  .modal-content input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10000px;
+    border: none;
+    outline: none;
+    transition: 0.1s;
+    height: 40px;
+  }
+
+  .modal-content input[type="password"]:focus {
+    outline: #4a90e2 3px solid;
+    outline-offset: 2px;
+  }
+
+  .modal-content button {
+    margin-top: 10px;
+    padding: 12px 24px;
+    cursor: pointer;
+    border-radius: 15px;
+    font-size: 90%;
+    margin-top: 20px;
+    background-color: rgb(0, 190, 0);
+    color: white;
+    transition: 0.2;
+  }
+
+  .modal-content button:hover {
+    scale: 1.2;
+    box-shadow: 0 0 15px lime;
+  }
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: tomato;
+    padding: 5px;
+    border-radius: 10000000px;
+    height: 25px;
+    width: 25px;
+    display: none;
+  }
+
+  .close-btn &times {
+    bottom: 1000px;
+    position: absolute;
+    margin-bottom: 10px;
+
+  }
+
+  /* Keyframe animations for zoom in and zoom out */
+  @keyframes zoomIn {
+    0% { transform: translate(-50%, -50%) scale(0); }
+    100% { transform: translate(-50%, -50%) scale(1); }
+  }
+  @keyframes zoomOut {
+    0% { transform: translate(-50%, -50%) scale(1); }
+    100% { transform: translate(-50%, -50%) scale(0); }
+  }
+
+  .toast {
+    visibility: hidden;
+    min-width: 200px;
+    background-color: #f44336;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: -100px;
+    left: 50%;
+    border-radius: 12px;
+    transform: translateX(-50%);
+    z-index: 9;
+    transition: bottom 0.3s ease, visibility 0.3s;
+  }
+  .toast.show {
+    visibility: visible;
+    bottom: 30px;
+  }
+  .toast.hide {
+    visibility: hidden;
+    bottom: -100px;
+}
+
+p.tip {
+    font-style: italic;
+    font-size: 15px;
+    margin: 5px;
+    color: rgb(180, 180, 180);
 }
