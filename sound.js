@@ -1,3 +1,16 @@
+
+// Password protection
+const password = prompt("Enter the password to access the soundboard:");
+
+if (password === "I AM COOL") { // Replace with your actual password
+    document.querySelector('.soundboard').classList.remove('hidden'); // Show soundboard if correct
+} else {
+    alert("Wrong password! Access denied.");
+    window.location.href = "https://sprintingsnail69.github.io/coolsounds/"; // Redirect or reload
+}
+
+
+
 const audios = document.querySelectorAll('.Audio');
   
 //Stops audio lol

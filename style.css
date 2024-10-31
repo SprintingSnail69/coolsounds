@@ -56,6 +56,12 @@ body {
     color: #fff;
 }
 
+.hidden {
+    display: none; /* Keeps the soundboard hidden */
+    text-align: center;
+}
+
+
 .soundboard {
     text-align: center;
 }
