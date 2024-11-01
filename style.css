@@ -168,6 +168,8 @@ button:hover {
     display: none;
   }
 
+  /*cobblesteve is him at css totally not chatgpt right*/
+
   .close-btn &times {
     bottom: 1000px;
     position: absolute;
@@ -215,3 +217,4 @@ p.tip {
     margin: 5px;
     color: rgb(180, 180, 180);
 }
+
