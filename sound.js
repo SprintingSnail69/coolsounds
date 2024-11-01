@@ -66,7 +66,6 @@ function playSound(id) {
     return;
   }
   const sound = document.getElementById(id);
-  stopAllSound()
   sound.currentTime = 0;
   sound.play();
 }
