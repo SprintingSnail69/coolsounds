@@ -15,12 +15,18 @@
 
     <div class="soundboard hidden">
 
-        <h1 class="head">Soundboard 🎶</h1>
+        <h1 class="head">Coolsounds</h1>
         <p class="para" style="margin-top: -60px;">Press S to stop all sound</p>
+        <center>
+        <div class="toggle-container">
+            <label class="toggle-switch">
+              <input type="checkbox" id="overlapSwitch" onclick="toggleOverlap()">
+              <span class="slider"></span>
+            </label>
+            <span id="overlapText">Sound Overlapping</span>
+          </div>
+        </center>
         <br><br>
-        <!--cobblesteve no inappropiateness okay and GO TOUCH GRASS-->
-        <!--Also can you guys add like a password or smth so u need the password
-        to use the site cuz idk how to do it-->
         <div class="buttons">
             <button onclick="playSound('sound1')">GET OUT🗣</button>
             <button onclick="playSound('sound2')">Metal Pipe</button>
@@ -100,7 +106,6 @@
 
         <!--Add more audio like above-->
         <p class="pg">Made by <a href="https://SprintingSnail69.github.io" target="_blank">SprintingSnail69</a>, <a href="https://cobblesteve01.github.io" target="_blank">cobblesteve01</a>, and <a href="https://github.com/bahabryra" target="_blank">bahabryra</a></p>
-        <!--baha stick to music man plz i always have to fix ur typos and html-->
 
     </div>
 
@@ -117,6 +122,7 @@
       <button onclick="checkPassword()">Submit</button>
     </div>
   </div>
+
     <!--JS files teehee-->
     <script src="sound.js"></script>
 

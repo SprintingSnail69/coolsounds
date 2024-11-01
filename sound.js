@@ -1,6 +1,14 @@
-
 // Authentication flag
 let authenticated = false;
+
+// Overlapping sounds flag
+let overlapAllowed = false;
+
+// Toggle overlapping sounds
+function toggleOverlap() {
+  overlapAllowed = !overlapAllowed;
+  document.getElementById("overlapToggle").innerText = overlapAllowed ? "Overlapping On" : "Overlapping Off";
+}
 
 // Show the modal for password entry
 function showPasswordModal() {
@@ -65,6 +73,11 @@ function playSound(id) {
     showPasswordModal();
     return;
   }
+  
+  if (!overlapAllowed) {
+    stopAllAudio(); // Stop any other sounds if overlap is not allowed
+  }
+
   const sound = document.getElementById(id);
   sound.currentTime = 0;
   sound.play();
@@ -74,13 +87,13 @@ function playSound(id) {
 showPasswordModal();
 
 document.addEventListener('keydown', (event) => {
-    if (event.key.toLowerCase() === 'enter') {
-        checkPassword()
-    }
-})
+  if (event.key.toLowerCase() === 'enter') {
+    checkPassword();
+  }
+});
 
 document.addEventListener('keydown', (event) => {
   if (event.key.toLowerCase() === 'escape') {
-    closeModal()
+    closeModal();
   }
-})
+});
