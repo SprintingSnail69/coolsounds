@@ -70,7 +70,8 @@ h1 {
     gap: 15px;
     flex-wrap: wrap;
     margin-left: 20px;
-
+    height: 100px; /*any value */
+    overflow-y: auto; 
 }
 
 button {
