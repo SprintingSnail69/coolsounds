@@ -16,9 +16,3 @@
 - Helped with HTML and JS
 > more sounds to come... <br>
 >             - cobblesteve01
-## bahabryra 
-- Bad at grammar
-- Joined 3 days after launch
-- Okay at HTML 
-> I've got bad grammar... <br>
->             - bahabryra
