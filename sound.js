@@ -42,7 +42,7 @@ function showToast() {
 // Check password input
 function checkPassword() {
   const passwordInput = document.getElementById("passwordInput").value;
-  if (passwordInput === "LOL") { // Replace with actual password
+  if (passwordInput === "BRAWLSTARS") { // Replace with password
     authenticated = true;
     document.querySelector('.soundboard').classList.remove('hidden'); // Show soundboard
     closeModal(); // Close the modal if correct
