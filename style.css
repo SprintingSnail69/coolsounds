@@ -1,275 +1,275 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: Inter;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Inter;
 }
 
 .skibidi {
-    margin: 0;
-    padding: 0;
-    font-family: Inter;
+  margin: 0;
+  padding: 0;
+  font-family: Inter;
 }
 
 @font-face {
-    font-family: Inter;
-    src: url(fonts/inter.ttf);
+  font-family: Inter;
+  src: url(fonts/inter.ttf);
 }
 
 .head {
-    font-size: 3em;
-    font-weight: 999;
+  font-size: 3em;
+  font-weight: 999;
 }
 
 .para {
-    font-family: Inter;
-    color: gray;
-    padding-top: 40px;
+  font-family: Inter;
+  color: gray;
+  padding-top: 40px;
 }
 
 .pg {
-    position: absolute;
-    bottom: 0;
-    font-size: 0.9em;
-    font-family: Inter;
-    background-color: #4a90e2;
-    padding: 10px;
-    margin: 0;
-    margin-bottom: -10px;
-    width: 100%;
-    left: 0;
-    font-weight: 500;
-    text-underline-offset: 3px;
-    color: white;
+  position: absolute;
+  bottom: 10px;
+  font-size: 0.9em;
+  font-family: Inter;
+  background-color: #4a90e2;
+  padding: 10px;
+  margin: 0;
+  margin-bottom: -10px;
+  width: 100%;
+  left: 0;
+  font-weight: 500;
+  text-underline-offset: 3px;
+  color: white;
 }
 
 .pg a {
-    color: white;
+  color: white;
 }
 
 body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #222;
-    color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #222;
+  color: #fff;
 }
 
 .soundboard {
-    text-align: center;
+  text-align: center;
 }
 
 h1 {
-    margin-bottom: 30px;
-    color: #4a90e2; 
+  margin-bottom: 30px;
+  color: #4a90e2; 
 }
 
 .buttons {
-    display: flex;
-    gap: 15px;
-    flex-wrap: wrap;
-    margin-left: 20px;
-    height: 500; /*any value */
-    overflow-y: auto; 
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-left: 20px;
+
 }
 
 button {
-    background-color: #4a90e2; 
-    color: #222;
-    border: none;
-    padding: 15px 30px;
-    font-size: 1.2em;
-    cursor: pointer;
-    transition: background-color 0.2s;
-    border-radius: 10px;
-    transition: 0.2s;
+  background-color: #4a90e2; 
+  color: #222;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  border-radius: 10px;
+  transition: 0.2s;
 }
 
 button:hover {
-    background-color: #79a6f7; 
-    scale: 107%;
-    box-shadow: 0 0 20px #79a6f7;
+  background-color: #79a6f7; 
+  scale: 107%;
+  box-shadow: 0 0 20px #79a6f7;
 }
 
 .modal {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
-    z-index: 2;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 2;
 
-  }
-  .modal-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    padding: 20px;
-    background-color: rgb(44, 44, 44);
-    border-radius: 20px;
-    padding: 15px;
-    width: 400px;
-    height: 245px;
-    text-align: center;
-    transform: translate(-50%, -50%) scale(0);
-    animation: zoomIn 0.3s ease forwards;
-  }
-  .modal.show .modal-content {
-    transform: translate(-50%, -50%) scale(1);
-  }
-  .modal.hide .modal-content {
-    animation: zoomOut 0.3s ease forwards;
-  }
-  .modal-content input[type="password"] {
-    width: 100%;
-    padding: 10px;
-    margin-top: 10px;
-    border-radius: 10000px;
-    border: none;
-    outline: none;
-    transition: 0.1s;
-    height: 40px;
-  }
+}
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 20px;
+  background-color: rgb(44, 44, 44);
+  border-radius: 20px;
+  padding: 15px;
+  width: 400px;
+  height: 245px;
+  text-align: center;
+  transform: translate(-50%, -50%) scale(0);
+  animation: zoomIn 0.3s ease forwards;
+}
+.modal.show .modal-content {
+  transform: translate(-50%, -50%) scale(1);
+}
+.modal.hide .modal-content {
+  animation: zoomOut 0.3s ease forwards;
+}
+.modal-content input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 10000px;
+  border: none;
+  outline: none;
+  transition: 0.1s;
+  height: 40px;
+}
 
-  .modal-content input[type="password"]:focus {
-    outline: #4a90e2 3px solid;
-    outline-offset: 2px;
-  }
+.modal-content input[type="password"]:focus {
+  outline: #4a90e2 3px solid;
+  outline-offset: 2px;
+}
 
-  .modal-content button {
-    margin-top: 10px;
-    padding: 12px 24px;
-    cursor: pointer;
-    border-radius: 15px;
-    font-size: 90%;
-    margin-top: 20px;
-    background-color: rgb(0, 190, 0);
-    color: white;
-    transition: 0.2;
-  }
+.modal-content button {
+  margin-top: 10px;
+  padding: 12px 24px;
+  cursor: pointer;
+  border-radius: 15px;
+  font-size: 90%;
+  margin-top: 20px;
+  background-color: rgb(0, 190, 0);
+  color: white;
+  transition: 0.2;
+}
 
-  .modal-content button:hover {
-    scale: 1.2;
-    box-shadow: 0 0 15px lime;
-  }
-  .close-btn {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 16px;
-    cursor: pointer;
-    background-color: tomato;
-    padding: 5px;
-    border-radius: 10000000px;
-    height: 25px;
-    width: 25px;
-    display: none;
-  }
+.modal-content button:hover {
+  scale: 1.2;
+  box-shadow: 0 0 15px lime;
+}
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: tomato;
+  padding: 5px;
+  border-radius: 10000000px;
+  height: 25px;
+  width: 25px;
+  display: none;
+}
 
-  /*cobblesteve is him at css totally not chatgpt right*/
+/*cobblesteve is him at css totally not chatgpt right*/
 
-  .close-btn &times {
-    bottom: 1000px;
-    position: absolute;
-    margin-bottom: 10px;
+.close-btn &times {
+  bottom: 1000px;
+  position: absolute;
+  margin-bottom: 10px;
 
-  }
+}
 
-  /* Keyframe animations for zoom in and zoom out */
-  @keyframes zoomIn {
-    0% { transform: translate(-50%, -50%) scale(0); }
-    100% { transform: translate(-50%, -50%) scale(1); }
-  }
-  @keyframes zoomOut {
-    0% { transform: translate(-50%, -50%) scale(1); }
-    100% { transform: translate(-50%, -50%) scale(0); }
-  }
+/* Keyframe animations for zoom in and zoom out */
+@keyframes zoomIn {
+  0% { transform: translate(-50%, -50%) scale(0); }
+  100% { transform: translate(-50%, -50%) scale(1); }
+}
+@keyframes zoomOut {
+  0% { transform: translate(-50%, -50%) scale(1); }
+  100% { transform: translate(-50%, -50%) scale(0); }
+}
 
-  .toast {
-    visibility: hidden;
-    min-width: 200px;
-    background-color: #f44336;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    position: fixed;
-    bottom: -100px;
-    left: 50%;
-    border-radius: 12px;
-    transform: translateX(-50%);
-    z-index: 9;
-    transition: bottom 0.3s ease, visibility 0.3s;
-  }
-  .toast.show {
-    visibility: visible;
-    bottom: 30px;
-  }
-  .toast.hide {
-    visibility: hidden;
-    bottom: -100px;
+.toast {
+  visibility: hidden;
+  min-width: 200px;
+  background-color: #f44336;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  position: fixed;
+  bottom: -100px;
+  left: 50%;
+  border-radius: 12px;
+  transform: translateX(-50%);
+  z-index: 9;
+  transition: bottom 0.3s ease, visibility 0.3s;
+}
+.toast.show {
+  visibility: visible;
+  bottom: 30px;
+}
+.toast.hide {
+  visibility: hidden;
+  bottom: -100px;
 }
 
 p.tip {
-    font-style: italic;
-    font-size: 15px;
-    margin: 5px;
-    color: rgb(180, 180, 180);
+  font-style: italic;
+  font-size: 15px;
+  margin: 5px;
+  color: rgb(180, 180, 180);
 }
 
 
 .toggle-container {
-  align-items: center;
-  gap: 10px;
-  margin-top: 20px;
-  font-size: 18px;
+align-items: center;
+gap: 10px;
+margin-top: 20px;
+font-size: 18px;
 }
 
 .toggle-switch {
-  position: relative;
-  display: inline-block;
-  width: 50px;
-  height: 24px;
-  bottom: 1.5px;
+position: relative;
+display: inline-block;
+width: 50px;
+height: 24px;
+bottom: 1.5px;
 }
 
 .toggle-switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
+opacity: 0;
+width: 0;
+height: 0;
 }
 
 .slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  transition: 0.4s;
-  border-radius: 24px;
+position: absolute;
+cursor: pointer;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: #ccc;
+transition: 0.4s;
+border-radius: 24px;
 }
 
 .slider:before {
-  position: absolute;
-  content: "";
-  height: 20px;
-  width: 20px;
-  left: 4px;
-  bottom: 2px;
-  background-color: white;
-  transition: 0.2s;
-  border-radius: 50%;
+position: absolute;
+content: "";
+height: 20px;
+width: 20px;
+left: 4px;
+bottom: 2px;
+background-color: white;
+transition: 0.2s;
+border-radius: 50%;
 }
 
 input:checked + .slider {
-  background-color: #4caf50;
+background-color: #4caf50;
 }
 
 input:checked + .slider:before {
-  transform: translateX(22px);
+transform: translateX(22px);
 }
 
 #overlapText { margin-left: 5px; }
