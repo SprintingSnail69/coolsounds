@@ -1,4 +1,5 @@
-# Cool soundboard thingy. Found by SprintingSnail69.
+# Cool soundboard thingy. 
+## Found by SprintingSnail69.
 # Developers
 ## SprintingSnail69
 - Pro HTML and JS dev
