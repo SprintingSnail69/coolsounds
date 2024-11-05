@@ -70,7 +70,7 @@ h1 {
     gap: 15px;
     flex-wrap: wrap;
     margin-left: 20px;
-    height: 800px; /*any value */
+    height: 500; /*any value */
     overflow-y: auto; 
 }
 
