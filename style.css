@@ -29,6 +29,7 @@
 
 .pg {
   position: absolute;
+  top: 25px;
   bottom: 10px;
   font-size: 0.9em;
   font-family: Inter;
