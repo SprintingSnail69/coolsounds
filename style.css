@@ -28,9 +28,9 @@
 }
 
 .pg {
-  position: absolute;
-  top: 25px;
-  bottom: 10px;
+  position: sticky;
+  margin-top: 25px;
+  margin-bottom: none;
   font-size: 0.9em;
   font-family: Inter;
   background-color: #4a90e2;
