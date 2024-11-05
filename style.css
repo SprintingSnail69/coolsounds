@@ -28,9 +28,8 @@
 }
 
 .pg {
-  position: sticky;
-  margin-top: 25px;
-  margin-bottom: none;
+  position: absolute;
+  bottom: 0;
   font-size: 0.9em;
   font-family: Inter;
   background-color: #4a90e2;
