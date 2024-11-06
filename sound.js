@@ -1,8 +1,8 @@
 // Authentication flag
 let authenticated = false;
 
-// Overlapping sounds flag
-let overlapAllowed = false;
+// Overlapping sounds flag. i want it to be on when u go in
+let overlapAllowed = true;
 
 // Toggle overlapping sounds
 function toggleOverlap() {
