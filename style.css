@@ -5,6 +5,11 @@
   font-family: Inter;
 }
 
+::-webkit-scrollbar {
+  opacity: 0;
+  width: 0;
+}
+
 .skibidi {
   margin: 0;
   padding: 0;
@@ -23,46 +28,54 @@
 
 .para {
   font-family: Inter;
-  color: gray;
+  color: white;
   padding-top: 40px;
 }
 
 .pg {
-  position: absolute;
-  bottom: 0;
+  margin-bottom: 0px;
   font-size: 0.9em;
   font-family: Inter;
-  background-color: #4a90e2;
+  background-color: rgb(202, 16, 16);
   padding: 10px;
-  margin: 0;
-  margin-bottom: -10px;
   width: 100%;
   left: 0;
   font-weight: 500;
   text-underline-offset: 3px;
   color: white;
+  position: fixed;
+  bottom: 0;
+  left: 0;
 }
 
 .pg a {
   color: white;
+  transition: 0.2s;
+}
+
+.pg a:hover {
+  text-underline-offset: 1px;
 }
 
 body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   min-height: 100vh;
-  background: #222;
+  background: url(img/bg/christmas.png);
+  background-size: cover;
   color: #fff;
 }
 
 .soundboard {
   text-align: center;
+  z-index: 0;
 }
 
 h1 {
   margin-bottom: 30px;
-  color: #4a90e2; 
+  color: rgb(255, 255, 255); 
+}
+
+h1.soon {
+  display: flex;
 }
 
 .buttons {
@@ -74,8 +87,8 @@ h1 {
 }
 
 button {
-  background-color: #4a90e2; 
-  color: #222;
+  background-color: rgb(255, 36, 36); 
+  color: white;
   border: none;
   padding: 15px 30px;
   font-size: 1.2em;
@@ -86,9 +99,9 @@ button {
 }
 
 button:hover {
-  background-color: #79a6f7; 
+  background-color: rgb(202, 16, 16); 
   scale: 107%;
-  box-shadow: 0 0 20px #79a6f7;
+  box-shadow: 0 0 20px rgb(202, 16, 16);
 }
 
 .modal {
@@ -99,7 +112,7 @@ button:hover {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
-  z-index: 2;
+  z-index: 1000;
 
 }
 .modal-content {
@@ -126,7 +139,7 @@ button:hover {
   width: 100%;
   padding: 10px;
   margin-top: 10px;
-  border-radius: 10000px;
+  border-radius: 15px;
   border: none;
   outline: none;
   transition: 0.1s;
@@ -145,14 +158,14 @@ button:hover {
   border-radius: 15px;
   font-size: 90%;
   margin-top: 20px;
-  background-color: rgb(0, 190, 0);
+  background-color: rgb(255, 36, 36);
   color: white;
   transition: 0.2;
 }
 
 .modal-content button:hover {
   scale: 1.2;
-  box-shadow: 0 0 15px lime;
+  box-shadow: 0 0 15px rgb(255, 36, 36);
 }
 .close-btn {
   position: absolute;
@@ -215,7 +228,7 @@ p.tip {
   font-style: italic;
   font-size: 15px;
   margin: 5px;
-  color: rgb(180, 180, 180);
+  color: white;
 }
 
 
@@ -265,7 +278,7 @@ border-radius: 50%;
 }
 
 input:checked + .slider {
-background-color: #4caf50;
+background-color: rgb(255, 36, 36);
 }
 
 input:checked + .slider:before {
@@ -273,3 +286,105 @@ transform: translateX(22px);
 }
 
 #overlapText { margin-left: 5px; }
+
+.snowflakes {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* Prevent interaction with snowflakes */
+  overflow: hidden;
+}
+
+.snowflake {
+  position: absolute;
+  top: -10px;
+  color: white;
+  font-size: 1em; /* Adjust size as desired */
+  opacity: 0.8;
+  animation: fall linear infinite;
+  width: 5px;
+  height: 5px;
+  box-shadow: 0 0 10px white;
+  background: white;
+  border-radius: 100000px;
+  z-index: 1000000;
+}
+
+/* Randomize position and animation duration for each snowflake */
+.snowflake:nth-child(1) { left: 10%; animation-duration: 5s; }
+.snowflake:nth-child(2) { left: 20%; animation-duration: 7s; }
+.snowflake:nth-child(3) { left: 30%; animation-duration: 6s; }
+.snowflake:nth-child(4) { left: 40%; animation-duration: 8s; }
+.snowflake:nth-child(5) { left: 50%; animation-duration: 5s; }
+.snowflake:nth-child(6) { left: 60%; animation-duration: 9s; }
+.snowflake:nth-child(7) { left: 70%; animation-duration: 6s; }
+.snowflake:nth-child(8) { left: 80%; animation-duration: 7s; }
+.snowflake:nth-child(9) { left: 90%; animation-duration: 6s; }
+
+/* Animation keyframes */
+@keyframes fall {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+nav {
+  display: block;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: #222;
+  color: white;
+  border-radius: 25px;
+  box-shadow: 0 0 8px #222;
+  font-weight: 500;
+  font-family: Inter;
+  margin: 10px;
+}
+  
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+}
+  
+nav li {
+  display: inline-block;
+  margin-right: 1rem;
+  position: relative;
+  font-family: Inter;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+  
+nav a {
+  color: white;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  font-family: Inter;
+  font-weight: 600;
+}
+  
+nav a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: rgb(255, 36, 36);
+  transform: scaleX(0);
+  transition: transform 0.15s ease-in-out;
+}
+  
+nav a:hover::after {
+  transform: scaleX(1);
+}
