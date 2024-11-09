@@ -26,10 +26,6 @@
   font-weight: 999;
 }
 
-title {
-  color: rgb(60, 211, 60);
-}
-
 .para {
   font-family: Inter;
   color: white;
@@ -343,13 +339,13 @@ nav {
   display: block;
   justify-content: space-between;
   padding: 1rem 2rem;
-  background-color: #222;
+  background: rgba(0, 0, 0, 0.4);
   color: white;
   border-radius: 25px;
-  box-shadow: 0 0 8px #222;
   font-weight: 500;
   font-family: Inter;
   margin: 10px;
+  z-index: 2;
 }
   
 nav ul {
@@ -375,6 +371,8 @@ nav a {
   overflow: hidden;
   font-family: Inter;
   font-weight: 600;
+  filter: none;
+  z-index: 1000000000;
 }
   
 nav a::after {
