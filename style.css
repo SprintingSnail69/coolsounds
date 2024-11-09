@@ -26,6 +26,10 @@
   font-weight: 999;
 }
 
+.title {
+  color: rgb(88, 211, 88);
+}
+
 .para {
   font-family: Inter;
   color: white;
