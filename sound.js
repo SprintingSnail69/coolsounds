@@ -1,14 +1,10 @@
-// Overlapping sounds flag
 let overlapAllowed = false;
 
-// Toggle overlapping sounds
 function toggleOverlap() {
   overlapAllowed = !overlapAllowed;
   document.getElementById("overlapToggle").innerText = overlapAllowed ? "Overlapping On" : "Overlapping Off";
 }
 
-
-// Stop all audio
 const audios = document.querySelectorAll('.Audio');
 function stopAllAudio() {
   audios.forEach(audio => {
@@ -17,17 +13,15 @@ function stopAllAudio() {
   });
 }
 
-// Press 'S' key to stop audio
 document.addEventListener('keydown', (event) => {
   if (event.key.toLowerCase() === 's') {
     stopAllAudio();
   }
 });
 
-// Play sound with password check
 function playSound(id) {
   if (!overlapAllowed) {
-    stopAllAudio(); // Stop any other sounds if overlap is not allowed
+    stopAllAudio();
   }
 
   const sound = document.getElementById(id);
