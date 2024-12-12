@@ -20,5 +20,4 @@
 ## TheOneandOnlyPenguin
 - a penguin
 - im a penguin that can fly
--just here
 - good at JS
