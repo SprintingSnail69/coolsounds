@@ -18,8 +18,7 @@
 > more sounds to come... <br>
 >             - cobblesteve01
 ## TheOneandOnlyPenguin
-
--just here
--knows JS
 - a penguin
 - im a penguin that can fly
+-just here
+- good at JS
