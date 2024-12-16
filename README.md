@@ -7,6 +7,7 @@
 - Did like half of the HTML and JS
 - Added like 15 sounds
 - Bad at CSS
+- Crashes out on spelling mistakes
 > more features on its way... <br>
 >             - SprintingSnail69
 ## cobblesteve01
@@ -17,7 +18,8 @@
 - Did like half of the HTML and JS
 > more sounds to come... <br>
 >             - cobblesteve01
-## TheOneandOnlyPenguin
+## TheOneAndOnlyPenguin
 - a penguin
-- im a penguin that can fly
+- I'm a penguin that can fly
 - good at JS
+  
