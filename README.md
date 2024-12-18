@@ -1,5 +1,11 @@
 # Cool soundboard thingy. 
-## Found by SprintingSnail69.
+## Founded by SprintingSnail69.
+# Features
+- Clean UI
+- No ads
+- Quality sounds
+- More coming soon!
+
 # Developers
 ## SprintingSnail69
 - Pro HTML and JS dev
