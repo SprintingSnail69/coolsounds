@@ -36,7 +36,7 @@
   margin-bottom: 0px;
   font-size: 0.9em;
   font-family: Inter;
-  background-color: rgb(202, 16, 16);
+  background-color: rgb(13, 16, 156);
   padding: 10px;
   width: 100%;
   left: 0;
@@ -59,7 +59,7 @@
 
 body {
   min-height: 100vh;
-  background: url(img/bg/christmas.png);
+  background-color: rgb(86, 108, 138);
   background-size: cover;
   color: #fff;
 }
@@ -87,7 +87,7 @@ h1.soon {
 }
 
 button {
-  background-color: rgb(255, 36, 36); 
+  background-color: rgb(56, 70, 194); 
   color: white;
   border: none;
   padding: 15px 30px;
@@ -99,9 +99,9 @@ button {
 }
 
 button:hover {
-  background-color: rgb(202, 16, 16); 
+  background-color: rgb(13, 16, 156); 
   scale: 107%;
-  box-shadow: 0 0 20px rgb(202, 16, 16);
+  box-shadow: 0 0 20px rgb(13, 16, 156);
 }
 
 .modal {
@@ -158,14 +158,14 @@ button:hover {
   border-radius: 15px;
   font-size: 90%;
   margin-top: 20px;
-  background-color: rgb(255, 36, 36);
+  background-color: rgb(65, 84, 248);
   color: white;
   transition: 0.2;
 }
 
 .modal-content button:hover {
   scale: 1.2;
-  box-shadow: 0 0 15px rgb(255, 36, 36);
+  box-shadow: 0 0 15px rgb(13, 16, 156);
 }
 .close-btn {
   position: absolute;
@@ -287,41 +287,6 @@ transform: translateX(22px);
 
 #overlapText { margin-left: 5px; }
 
-.snowflakes {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none; /* Prevent interaction with snowflakes */
-  overflow: hidden;
-}
-
-.snowflake {
-  position: absolute;
-  top: -10px;
-  color: white;
-  font-size: 1em; /* Adjust size as desired */
-  opacity: 0.8;
-  animation: fall linear infinite;
-  width: 5px;
-  height: 5px;
-  box-shadow: 0 0 10px white;
-  background: white;
-  border-radius: 100000px;
-  z-index: 1000000;
-}
-
-/* Randomize position and animation duration for each snowflake */
-.snowflake:nth-child(1) { left: 10%; animation-duration: 5s; }
-.snowflake:nth-child(2) { left: 20%; animation-duration: 7s; }
-.snowflake:nth-child(3) { left: 30%; animation-duration: 6s; }
-.snowflake:nth-child(4) { left: 40%; animation-duration: 8s; }
-.snowflake:nth-child(5) { left: 50%; animation-duration: 5s; }
-.snowflake:nth-child(6) { left: 60%; animation-duration: 9s; }
-.snowflake:nth-child(7) { left: 70%; animation-duration: 6s; }
-.snowflake:nth-child(8) { left: 80%; animation-duration: 7s; }
-.snowflake:nth-child(9) { left: 90%; animation-duration: 6s; }
 
 /* Animation keyframes */
 @keyframes fall {
