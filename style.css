@@ -59,7 +59,7 @@
 
 body {
   min-height: 100vh;
-  background-color: rgb(86, 108, 138);
+  background-color: rgb(100, 100, 100);
   background-size: cover;
   color: #fff;
 }
@@ -87,7 +87,7 @@ h1.soon {
 }
 
 button {
-  background-color: rgb(56, 70, 194); 
+  background-color: rgb(39, 71, 255); 
   color: white;
   border: none;
   padding: 15px 30px;
@@ -158,7 +158,7 @@ button:hover {
   border-radius: 15px;
   font-size: 90%;
   margin-top: 20px;
-  background-color: rgb(65, 84, 248);
+  background-color: rgb(28, 41, 146);
   color: white;
   transition: 0.2;
 }
