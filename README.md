@@ -17,14 +17,14 @@
 - Crashes out on spelling mistakes
 > more features on its way... <br>
 >             - SprintingSnail69
-## cobblesteve01
+## x8r
 - Pro at every language
 - Joined 2 days after launch
 - Added like 27 sounds
 - Cooking with the CSS
 - Did like half of the HTML and JS
 > more sounds to come... <br>
->             - cobblesteve01
+>             - x8r
 ## TheOneAndOnlyPenguin
 - a penguin
 - I'm a penguin that can fly
